@@ -1,0 +1,147 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+    h1 {
+      text-align: center;
+      color: #00ffa3;
+      margin-bottom: 30px;
+    }
+
+    .section:hover {
+      transform: translateY(-2px);
+    }
+
+    .section h2 {
+      margin-top: 0;
+      font-size: 1.1rem;
+      color: #00ffa3;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: 400;
+    }
+
+    input {
+      margin-top: 5px;
+      padding: 8px 10px;
+      border-radius: 6px;
+      border: 1px solid #eee;
+      width: 100%;
+      box-sizing: border-box;
+      transition: border-color 0.2s;
+    }
+
+    input:focus {
+      outline: none;
+      border-color: #00ffa3;
+    }
+
+    button {
+      margin: 5px 0;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: transform 0.1s, opacity 0.2s;
+    }
+
+    button:hover {
+      transform: scale(1.03);
+    }
+
+    
+    #createAccountBtn { background: #8b5cf6; color: #fff; }
+    #refreshMintBtn { background: #0ea5e9; color: #fff; }
+
+
+    pre {
+      background: #f0f0f0;
+      padding: 10px;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+
+    /* Icons */
+    .icon {
+      width: 16px;
+      height: 16px;
+      fill: currentColor;
+    }
+
+
+/* Make <code> inline elements scroll if too long */
+code {
+  display: inline-block;
+  max-width: 100%;
+  overflow-x: auto;
+  background: #f4f4f4;
+  padding: 6px;
+  border-radius: 4px;
+}
+
+
+#dashboard {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  border-radius: 10px;
+  
+}
+
+
+
+/* Section styling */
+.section {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+      transition: transform 0.2s;
+}
+
+
+/* Solana-style colors */
+#createMintBtn { background-color: #6a43ff; color: #fff; }
+#mintBtn { background-color: #14f195; color: #000; }
+#transferBtn { background-color: #ffb800; color: #000; }
+#burnBtn { background-color: #ff4d4f; color: #fff; }
+#connectBtn { background-color: #8247e5; color: #fff; }
+
+
+#sectionsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+}
+
+/* Result boxes for tx and balances */
+#mintResult2, #transferResult, #burnResult, #mintInfo, #walletInfo, #accountResult {
+  word-break: break-all;
+  overflow-wrap: anywhere;
+  overflow-x: auto;
+  max-width: 100%;
+  padding: 5px;
+  background: #f9f9f9;
+  border-radius: 5px;
+}
+#sectionsContainer .section:last-child {
+  grid-column: 1 / -1; /* Span all columns */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}

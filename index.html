@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Solana Token Dashboard (Phantom)</title>
+  <script type="module" src="./src/index.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div id="dashboard">
+  <h1>Solana Token Dashboard</h1>
+  <div id="sectionsContainer">
+  <div class="section">
+    <h2>
+      <!-- Wallet icon -->
+      <svg class="icon" viewBox="0 0 24 24"><path d="M12 2l5 9H7l5-9zm0 20l-5-9h10l-5 9z"/></svg>
+      Connect Wallet
+    </h2>
+    <button id="connectBtn">
+      <svg class="icon" viewBox="0 0 24 24"><path d="M12 2l5 9H7l5-9zm0 20l-5-9h10l-5 9z"/></svg>
+      Connect Phantom
+    </button>
+    <div id="walletInfo">Wallet not connected.</div>
+  </div>
+  <div class="section">
+    <h2>
+      <svg class="icon" viewBox="0 0 24 24"><path d="M12 2l5 9H7l5-9zm0 20l-5-9h10l-5 9z"/></svg>
+      Create Mint
+    </h2>
+    <label>Decimals:
+      <input type="number" id="decimals" value="6" min="0" max="9">
+    </label>
+    <button id="createMintBtn">
+      <svg class="icon" viewBox="0 0 24 24"><path d="M12 2l5 9H7l5-9zm0 20l-5-9h10l-5 9z"/></svg>
+      Create Mint
+    </button>
+    <div id="mintResult"></div>
+  </div>
+
+  <div class="section">
+    <h2>
+      <svg class="icon" viewBox="0 0 24 24"><path d="M12 2l5 9H7l5-9zm0 20l-5-9h10l-5 9z"/></svg>
+      Create / Get ATA
+    </h2>
+    <button id="createAccountBtn">
+      <svg class="icon" viewBox="0 0 24 24"><path d="M12 2l5 9H7l5-9zm0 20l-5-9h10l-5 9z"/></svg>
+      Create/Get My ATA
+    </button>
+    <div id="accountResult"></div>
+  </div>
+
+  <div class="section">
+    <h2>
+      <svg class="icon" viewBox="0 0 24 24"><path d="M12 2l5 9H7l5-9zm0 20l-5-9h10l-5 9z"/></svg>
+      Mint Tokens
+    </h2>
+    <label>Amount:
+      <input type="number" id="mintAmount" value="0">
+    </label>
+    <button id="mintBtn">
+      <svg class="icon" viewBox="0 0 24 24"><path d="M12 2l5 9H7l5-9zm0 20l-5-9h10l-5 9z"/></svg>
+      Mint
+    </button>
+    <div id="mintResult2"></div>
+  </div>
+
+  <div class="section">
+    <h2>
+      <svg class="icon" viewBox="0 0 24 24"><path d="M12 2l5 9H7l5-9zm0 20l-5-9h10l-5 9z"/></svg>
+      Transfer Tokens
+    </h2>
+    <label>Destination Wallet:
+      <input type="text" id="destWallet" placeholder="Recipient address">
+    </label>
+    <label>Amount:
+      <input type="number" id="transferAmount" value="0">
+    </label>
+    <button id="transferBtn">
+      <svg class="icon" viewBox="0 0 24 24"><path d="M12 2l5 9H7l5-9zm0 20l-5-9h10l-5 9z"/></svg>
+      Transfer
+    </button>
+    <div id="transferResult"></div>
+    <div id="transferStatus"></div>
+  </div>
+
+  <div class="section">
+    <h2>
+      <svg class="icon" viewBox="0 0 24 24"><path d="M12 2l5 9H7l5-9zm0 20l-5-9h10l-5 9z"/></svg>
+      Burn Tokens
+    </h2>
+    <label>Amount:
+      <input type="number" id="burnAmount" value="0">
+    </label>
+    <button id="burnBtn">
+      <svg class="icon" viewBox="0 0 24 24"><path d="M12 2l5 9H7l5-9zm0 20l-5-9h10l-5 9z"/></svg>
+      Burn
+    </button>
+    <div id="burnResult"></div>
+  </div>
+
+  <div class="section">
+    <h2>
+      <svg class="icon" viewBox="0 0 24 24"><path d="M12 2l5 9H7l5-9zm0 20l-5-9h10l-5 9z"/></svg>
+      Mint Info
+    </h2>
+    <button id="refreshMintBtn">
+      <svg class="icon" viewBox="0 0 24 24"><path d="M12 2l5 9H7l5-9zm0 20l-5-9h10l-5 9z"/></svg>
+      Refresh Mint Info
+    </button>
+    <pre id="mintInfo">No mint created yet.</pre>
+  </div>
+  </div>
+ </div>
+</body>
+</html>
