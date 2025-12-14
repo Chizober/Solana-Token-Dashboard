@@ -7,9 +7,12 @@
   --solana-text: #e5e7eb;
   --solana-muted: #9ca3af;
 }
-
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 body {
-  margin: 0;
   min-height: 100vh;
   background: radial-gradient(circle at top, #1a1f3c, var(--solana-dark));
   font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -66,7 +69,8 @@ label {
 
 input {
   margin-top: 6px;
-  padding: 10px 12px;
+  padding: 10px;
+  width:180px;
   border-radius: 10px;
   border: 1px solid var(--solana-border);
   background: #0f172a;
@@ -116,7 +120,10 @@ button:hover {
       overflow-x: auto;
       background: #0f172a;
     }
-
+code {
+  overflow-x: auto;
+display: inline-block;
+}
     /* Icons */
     .icon {
       width: 16px;
@@ -126,15 +133,17 @@ button:hover {
 
 #dashboard {
   width: 100%;
-  max-width: 1100px;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 30px;
   border-radius: 16px;
 }
 
 #sectionsContainer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
+    width: 100%;
 }
 
  #mintResult2,
@@ -143,20 +152,22 @@ button:hover {
 #burnResult,
 #mintInfo,
 #walletInfo,
-#accountResult {
+#accountResult,code {
   margin-top: 10px;
   padding: 10px;
   border-radius: 10px;
   background: #0f172a;
   border: 1px solid var(--solana-border);
   font-size: 0.85rem;
-  word-break: break-all;
+  word-break: word-break;
  overflow-wrap: anywhere;
-  max-width: 100%;
+  max-width: 100%; 
+  white-space: normal;
   line-height: 1.3;
 }
+
 #destWallet {
-  width: 90%;
+  width: 100%;
 }
 #sectionsContainer .section:last-child {
   grid-column: 1 / -1; /* Span all columns */
@@ -165,9 +176,29 @@ button:hover {
   align-items: center;
   text-align: center;
 }
+@media (max-width: 900px) {
+  input{
+    width: 100%;
 
+  }
+  button{
+    width: 100%; /* Full-width buttons on phone */
+    justify-content: center;
+  }
+}
+@media (max-width: 650px) {
+  input{
+    width: 100%;
+
+  }
+
+  button {
+    width: 100%; /* Full-width buttons on phone */
+    justify-content: center;
+  }
+}
 /* 📱 Mobile responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 540px) {
   #sectionsContainer {
     grid-template-columns: 1fr; /* One column */
   }
@@ -178,7 +209,7 @@ button:hover {
 
   #dashboard {
     padding: 10px;
-  }
+  } 
 
   h1 {
     font-size: 1.4rem;
@@ -186,7 +217,7 @@ button:hover {
 
   .section {
     padding: 12px;
-  }
+  } 
 
   button {
     width: 100%; /* Full-width buttons on phone */
@@ -195,5 +226,7 @@ button:hover {
 
   input {
     font-size: 16px; /* Prevent mobile zoom */
+    width: 100%;
   }
+
 }
