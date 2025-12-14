@@ -165,3 +165,35 @@ button:hover {
   align-items: center;
   text-align: center;
 }
+
+/* 📱 Mobile responsiveness */
+@media (max-width: 768px) {
+  #sectionsContainer {
+    grid-template-columns: 1fr; /* One column */
+  }
+
+  body {
+    margin: 10px;
+  }
+
+  #dashboard {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  .section {
+    padding: 12px;
+  }
+
+  button {
+    width: 100%; /* Full-width buttons on phone */
+    justify-content: center;
+  }
+
+  input {
+    font-size: 16px; /* Prevent mobile zoom */
+  }
+}

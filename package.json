@@ -2,7 +2,6 @@
   "name": "solana-token-dashboard",
   "version": "1.0.0",
   "description": "",
-
   "scripts": {
     "start": "parcel index.html --open",
      "dev": "parcel index.html",
