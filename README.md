@@ -83,4 +83,70 @@ Perfect for **students, beginners, and workshops**.
 ### 1️⃣ Start Solana Local Validator
 ```bash
 solana-test-validator
+```
 
+2️⃣ Install Dependencies
+```bash
+npm install
+```
+3️⃣ Start the App
+```bash
+npm run start
+```
+
+
+Make sure Phantom Wallet is set to Localhost (http://127.0.0.1:8899
+).
+
+🧩 Important Concepts Explained
+🔹 Mint
+
+The token itself — defines decimals, supply, and authorities.
+
+🔹 ATA (Associated Token Account)
+
+A wallet-specific account that holds tokens of a specific mint.
+
+🔹 Phantom Wallet
+
+Used to:
+
+Pay transaction fees
+
+Sign transactions
+
+Act as mint authority
+
+⚠️ Notes
+
+This project runs on localnet, not mainnet.
+
+Tokens created here have no real value.
+
+Designed strictly for learning and demos.
+
+👨‍🏫 Use Case
+
+Classroom teaching
+
+Workshops
+
+Live blockchain demos
+
+Beginner Solana projects
+
+Portfolio project
+
+## 🙏 Acknowledgements
+
+This project was built as part of a blockchain learning program (First Builders Cohort) supported by:
+
+- **SuperteamNG** – for ecosystem support, mentorship, and exposure to Solana development.
+- **blockchainHubafrica** – for hands-on training, guidance, and technical support.
+
+Their contributions played a major role in making this project possible,THANK YOU 🙏 .
+
+
+📜 License
+
+MIT License
