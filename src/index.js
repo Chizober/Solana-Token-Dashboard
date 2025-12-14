@@ -371,7 +371,7 @@ burnBtn.addEventListener("click", async () => {
     await connection.confirmTransaction(sig, "confirmed");
 
     const ataAccount = await getAccount(connection, currentMyATA);
-    burnResult.innerHTML = `Burned ${amount} tokens. New balance: ${ataAccount.amount.toString()} (tx: <code>${sig}</code>)`;
+    burnResult.innerHTML = `Burned ${amount} tokens.<br> New balance: ${ataAccount.amount.toString()} (tx: <code>${sig}</code>)`;
   } catch (err) {
     console.error(err);
     burnResult.innerText = "Burn failed: " + (err.message || err);
