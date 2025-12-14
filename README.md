@@ -1,83 +1,152 @@
-# Solana Token Dashboard (Phantom Wallet)
 
-A web-based dashboard to interact with Solana SPL Tokens using the **Phantom Wallet**. Create mints, ATAs, mint, transfer, and burn tokens with live balances.
 
----
 
-## **Features**
+# 🚀 Solana Token Dashboard (Phantom Wallet)
 
-- Connect your Phantom wallet.
-- Create a custom SPL Token (mint) with a selected number of decimals.
-- Create or fetch your **Associated Token Account (ATA)**.
-- Mint tokens into your ATA.
-- Transfer tokens to any Solana wallet (auto-creates ATA if missing).
-- Burn tokens from your ATA.
-- Live token balance display.
-- Solana-style clean UI with colored buttons and responsive 2-column layout.
+A beginner-friendly **Solana SPL Token Dashboard** that allows users to:
 
----
+- Connect Phantom Wallet
+- Create SPL token mints
+- Create Associated Token Accounts (ATA)
+- Mint tokens
+- Transfer tokens
+- Burn tokens
+- View live mint and balance information
 
-## **Tech Stack**
-
-- [Solana Web3.js](https://github.com/solana-labs/solana-web3.js)
-- [SPL Token JS](https://github.com/solana-labs/solana-program-library/tree/master/token/js)
-- HTML, CSS, JavaScript
-- Phantom Wallet (browser extension)
+Built for learning and live demos using **Solana localnet**.
 
 ---
 
-## **Installation / Running Locally**
+## 🎥 Live Demo
 
-1. Clone the repository:
+👉 *Watch the full demo below:*
 
+<!-- Paste your GitHub video link here -->
+(https://github.com/user-attachments/assets/7785fdfa-8530-43a9-98af-f68399832065)
+
+---
+
+## 🧠 What This Project Teaches
+
+This project explains and demonstrates:
+
+- How Phantom Wallet connects to a dApp
+- How SPL tokens work on Solana
+- Mint accounts and token decimals
+- Associated Token Accounts (ATA)
+- Transaction signing with Phantom
+- Minting, transferring, and burning tokens
+- Reading on-chain data (mint info & balances)
+
+Perfect for **students, beginners, and workshops**.
+
+---
+
+## 🧱 Tech Stack
+
+- **HTML, CSS, JavaScript**
+- **@solana/web3.js**
+- **@solana/spl-token**
+- **Phantom Wallet**
+- **Solana Local Validator**
+
+---
+
+## ⚙️ Features
+
+✅ Phantom Wallet connection  
+✅ Automatic SOL airdrop on localnet  
+✅ Create SPL token mint  
+✅ Create/get ATA  
+✅ Mint tokens  
+✅ Transfer tokens (auto-creates receiver ATA)  
+✅ Burn tokens  
+✅ Live balance updates  
+✅ Clean Solana-styled UI  
+
+---
+
+## 🛠️ How It Works (Simple Flow)
+
+1. Connect Phantom Wallet  
+2. Create a new SPL Token Mint  
+3. Create your Associated Token Account (ATA)  
+4. Mint tokens into your ATA  
+5. Transfer tokens to another wallet  
+6. Burn tokens when needed  
+7. View mint details anytime  
+
+---
+
+## 🧪 Running Locally
+
+### 1️⃣ Start Solana Local Validator
 ```bash
-git clone https://github.com/YOUR_USERNAME/solana-token-dashboard.git
-cd solana-token-dashboard
-
+solana-test-validator
 ```
-Install dependencies:
+
+2️⃣ Install Dependencies
 ```bash
 npm install
 ```
-
-## **Start a local server (e.g., with Parcel):**
+3️⃣ Start the App
 ```bash
-npx parcel index.html
+npm run start
 ```
 
-Open your browser at http://localhost:1234 (Parcel default).
 
-Make sure Phantom wallet is installed and connected to Localnet or your target network.
+Make sure Phantom Wallet is set to Localhost (http://127.0.0.1:8899
+).
 
-## **Usage**
+🧩 Important Concepts Explained
+🔹 Mint
 
-Connect Phantom wallet using the Connect Wallet button.
+The token itself — defines decimals, supply, and authorities.
 
-Create a mint with the desired decimals.
+🔹 ATA (Associated Token Account)
 
-Create or get your ATA.
+A wallet-specific account that holds tokens of a specific mint.
 
-Mint tokens to your ATA.
+🔹 Phantom Wallet
 
-Transfer tokens to another wallet.
+Used to:
 
-Burn tokens from your ATA.
+Pay transaction fees
 
-Refresh mint info to view updated balances and supply.
+Sign transactions
 
-## **Folder Structure**
+Act as mint authority
 
-solana-token-dashboard/
-├─ src/
-│  └─ index.js      # Main JS logic
-├─ index.html       # Dashboard UI
-├─ package.json
-└─ .gitignore
+⚠️ Notes
 
-Contributing
+This project runs on localnet, not mainnet.
 
-Contributions are welcome! Please open issues or submit pull requests for improvements.
+Tokens created here have no real value.
 
-License
+Designed strictly for learning and demos.
+
+👨‍🏫 Use Case
+
+Classroom teaching
+
+Workshops
+
+Live blockchain demos
+
+Beginner Solana projects
+
+Portfolio project
+
+## 🙏 Acknowledgements
+
+This project was built as part of a blockchain learning program (First Builders Cohort) supported by:
+
+- **SuperteamNG** – for ecosystem support, mentorship, and exposure to Solana development.
+- **blockchainHubafrica** – for hands-on training, guidance, and technical support.
+
+Their contributions played a major role in making this project possible,THANK YOU 🙏 .
+
+
+📜 License
 
 MIT License
