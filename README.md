@@ -22,7 +22,8 @@ Built for learning and live demos using **Solana localnet**.
 👉 *Watch the full demo below:*
 
 <!-- Paste your GitHub video link here -->
-https://youtu.be/qE7jsqh_BNU
+<!--https://youtu.be/qE7jsqh_BNU-->
+https://drive.google.com/file/d/1yVhEI3L0ujlkor8eFFzGcX9e9SNv9eJG/view?usp=sharing
 
 ---
 
