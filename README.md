@@ -22,7 +22,7 @@ Built for learning and live demos using **Solana localnet**.
 👉 *Watch the full demo below:*
 
 <!-- Paste your GitHub video link here -->
-(https://github.com/user-attachments/assets/7785fdfa-8530-43a9-98af-f68399832065)
+
 
 ---
 
