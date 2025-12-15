@@ -5,7 +5,7 @@
   "scripts": {
     "start": "parcel index.html --open",
      "dev": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --dist-dir build"
   },
   "keywords": [],
   "author": "",
