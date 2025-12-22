@@ -20,6 +20,7 @@ body {
   justify-content: center;
   align-items: center;
   color: var(--solana-text);
+   margin: 40px 10px 10px 10px;
 }
 
 h1 {
@@ -199,10 +200,6 @@ width: 100%;
 }
 /* 📱 Mobile responsiveness */
 @media (max-width: 540px) {
-
-  body {
-    margin: 10px;
-  }
 
   #dashboard {
     padding: 10px;
